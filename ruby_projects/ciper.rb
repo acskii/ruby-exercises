@@ -6,10 +6,10 @@
 
 def adjust_ord(ordinal, min_chr, max_chr)
     # Given ord value and cycles it back within given range
-    if ordinal > max.ord
-        (ordinal - max.ord) + min.ord - 1
-    elsif ordinal < min.ord
-        max.ord - (min.ord - ordinal) - 1
+    if ordinal > max_chr.ord
+        (ordinal - max_chr.ord) + min_chr.ord - 1
+    elsif ordinal < min_chr.ord
+        max_chr.ord - (min_chr.ord - ordinal) - 1
     else
         ordinal
     end
